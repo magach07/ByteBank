@@ -12,7 +12,7 @@ namespace ByteBank.Modelos.Sistemas {
 
             if (funcionarioAutenticado)
             {
-                Console.WriteLine("Seja bem-vindo");
+                Console.WriteLine("Seja bem-vindo ao ByteBank");
                 return true;
             }
             else

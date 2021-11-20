@@ -8,13 +8,14 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main (string[] args)
         {
+           
+
             SistemaInterno sis = new SistemaInterno();
-            Desenvolvedor dev = new Desenvolvedor("Jonathan Magacho", "111.222.333-44");
+            Desenvolvedor dev = new Desenvolvedor("Jonathan Magacho", "111.222.333-44", "string");
 
-            dev.Senha = "senha";
+            sis.Logar(dev, "string");
 
-            Console.WriteLine(dev.Autenticar("senha"));
-            Console.WriteLine(sis.Logar(dev, "senha"));
+            ContaCorrente cc = new ContaCorrente(5248895, 248, 5000);
         }
     }
 }

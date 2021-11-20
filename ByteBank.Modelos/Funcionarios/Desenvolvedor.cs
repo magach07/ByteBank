@@ -8,7 +8,7 @@ namespace ByteBank.Modelos.Funcionarios {
     public class Desenvolvedor : FuncionarioAutenticavel {
      
 
-        public Desenvolvedor(string nome, string cpf) : base(nome, cpf, 5000) {
+        public Desenvolvedor(string nome, string cpf, string senha) : base(nome, cpf, 5000, senha) {
 
         }
 
