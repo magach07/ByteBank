@@ -15,5 +15,9 @@ namespace ByteBank.Modelos.Funcionarios {
         public override void AumentarSalario() {
             Salario *= 0.20;
         }
+
+        protected internal override void GetBonificacao() {
+            throw new NotImplementedException();
+        }
     }
 }

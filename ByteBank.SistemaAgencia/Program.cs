@@ -1,6 +1,7 @@
 ﻿using ByteBank.Modelos;
 using ByteBank.Modelos.Funcionarios;
 using ByteBank.Modelos.Sistemas;
+using Humanizer;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -8,14 +9,34 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main (string[] args)
         {
-           
+            string url = "https://www.bytebank.com.br/cambio&moedaorigem=real&moedadestino=dolar";
+            string nome = "Jonathan Magacho Demetrio";
 
-            SistemaInterno sis = new SistemaInterno();
-            Desenvolvedor dev = new Desenvolvedor("Jonathan Magacho", "111.222.333-44", "string");
+            int primeiro = nome.IndexOf("Jonatha");
+            int segundo = nome.IndexOf("Magac");
+            Console.WriteLine("Pimeiro: " + primeiro + "\nSegundo: " + segundo);
+            Console.WriteLine(nome.Remove(primeiro, segundo + 1));
+            Console.WriteLine("agacho Demetrio");
 
-            sis.Logar(dev, "string");
+            //StartsWith
+            //EndsWith
+            //Contains
 
-            ContaCorrente cc = new ContaCorrente(5248895, 248, 5000);
+            /*Console.WriteLine(url);
+
+            string argumento = "moedaorigem";
+            int index = url.IndexOf("moedaorigem");
+            int tamanho = argumento.Length;
+
+            string result = url.Substring(index, tamanho);
+
+            Console.WriteLine(index);
+
+            Console.WriteLine("tamanho: " + tamanho);
+
+            Console.WriteLine(url.IndexOf("moedaorigem"));
+
+            Console.WriteLine(result);*/
         }
     }
 }
